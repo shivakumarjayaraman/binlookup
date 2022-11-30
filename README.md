@@ -11,6 +11,8 @@ To run the docker image, you can run the command below (to expose the lookup ser
 docker run --name binlookup -d -p 5000:5000 binlookup
 
 
-The service can be used to do BIN lookups by sending a GET request to /lookup/<phonenumber>
+The service can be used to do BIN lookups by sending a GET request to /lookup/&lt;credit-card-number&gt; (its enough to send just the first 6 digits)
+
+ex: http://localhost:5000/lookup/377420
 
 You are free to use this list for any purpose, including private or commercial use. This is just a test project, so use at your own risk. 
